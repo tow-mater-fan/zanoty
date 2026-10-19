@@ -3,359 +3,117 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zanoty | Graph Notebook</title>
-<meta name="description" content="Zanoty graph notebook. 25 pages, graph grid on every page, high quality paper. $6.50.">
-<link rel="icon" href="zanoty-logo.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;family=Figtree:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
-<style>
-body{margin:0}
-html{scroll-behavior:smooth}
-[hidden]{display:none!important}
-button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #1D9BB8;outline-offset:2px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-a{color:#0B5560}a:hover{color:#06343B}
-.grid{background-image:linear-gradient(rgba(11,85,96,0.09) 1px,transparent 1px),linear-gradient(90deg,rgba(11,85,96,0.09) 1px,transparent 1px);background-size:28px 28px}
-.griddark{background-image:linear-gradient(rgba(127,227,242,0.10) 1px,transparent 1px),linear-gradient(90deg,rgba(127,227,242,0.10) 1px,transparent 1px);background-size:30px 30px}
-.plot{background-color:#FFFFFF;background-image:linear-gradient(rgba(11,85,96,0.28) 1px,transparent 1px),linear-gradient(90deg,rgba(11,85,96,0.28) 1px,transparent 1px),linear-gradient(rgba(11,85,96,0.10) 1px,transparent 1px),linear-gradient(90deg,rgba(11,85,96,0.10) 1px,transparent 1px);background-size:5% 16.6667%,5% 16.6667%,1.25% 4.1667%,1.25% 4.1667%}
-.navlink{text-decoration:none;color:#0A2E35;font-weight:600}
-.navlink:hover{color:#0B5560;text-decoration:underline;text-underline-offset:6px}
-.row:hover{background:rgba(60,207,224,0.08)}
-</style>
+<title>Zanoty Graph Notebook</title>
+<meta name="description" content="Notes on one side, graphs on the other. 25 pages, four graphs on every page. $6.50.">
+<link rel="icon" href="images/favicon.png">
+<link rel="preload" href="fonts/fredoka-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div style="font-family: 'Figtree', 'Segoe UI', Helvetica, sans-serif; color: #0A2E35; background: #F6FBFB; position: relative">
-
-<div style="background: #0A2E35; color: #DDF6FA; font-size: 14px; padding: 10px 20px; text-align: center; font-weight: 500">Now available. $6.50. <a href="#shop" style="color: #7FE3F2; font-weight: 700">Shop now</a></div>
-
-<header style="position: sticky; top: 0; z-index: 20; background: rgba(246,251,251,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid #D5E9EC">
-<div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #0A2E35">
-<img src="zanoty-logo.jpg" alt="" style="width: 44px; height: 44px; object-fit: cover; border-radius: 50%">
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 118%; font-weight: 900; font-size: 22px; letter-spacing: 1px">ZANOTY</span>
-</a>
-<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px">
-<a class="navlink" href="#why">Why Zanoty</a>
-<a class="navlink" href="#try">Try the grid</a>
-<a class="navlink" href="#specs">Specs</a>
-<a class="navlink" href="#shop">Shop</a>
-<a class="navlink" href="#faq">FAQ</a>
-<button type="button" data-action="openCart" aria-label="Open cart" style="display: flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px; border: 1.5px solid #0A2E35; border-radius: 4px; background: #FFFFFF; color: #0A2E35; font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 15px; cursor: pointer">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14l-1.5 12h-11z"></path><path d="M9 7a3 3 0 0 1 6 0"></path></svg>
-Cart (<span id="cartCount">0</span>)
-</button>
+<div class="topbar">New: the Zanoty graph notebook. <a href="shop.html">Shop</a></div>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html" aria-label="Zanoty home"><img src="images/logo-word.png" alt="Zanoty"></a>
+<nav class="nav" aria-label="Main">
+<a href="shop.html">Shop</a>
+<a href="pages.html">The pages</a>
+<a href="faq.html">FAQ</a>
 </nav>
+<div class="header-end"><a href="shop.html">Buy $6.50</a></div>
 </div>
 </header>
+<main>
 
-<section id="top" class="grid" style="border-bottom: 1px solid #D5E9EC">
-<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
-<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<h1 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 900; font-size: clamp(46px, 6.6vw, 92px); line-height: 0.95; letter-spacing: -2px; text-transform: uppercase">The Zanoty<br>graph<br><span style="color: #0B5560">notebook.</span></h1>
-<p style="margin: 0; font-size: 20px; line-height: 1.6; max-width: 540px; color: #2C4F55">25 pages. Graph grid on every page. High quality paper.</p>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px">
-<button type="button" data-action="addSingle" style="height: 56px; padding: 0 30px; border: none; border-radius: 4px; background: #0B5560; color: #FFFFFF; font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 17px; cursor: pointer">Add to cart · $6.50</button>
-<a href="#try" style="display: flex; align-items: center; height: 56px; padding: 0 26px; border: 1.5px solid #0A2E35; border-radius: 4px; color: #0A2E35; text-decoration: none; font-weight: 700; font-size: 17px">Try the grid</a>
+<section class="hero">
+<div class="wrap">
+<div class="hero-copy">
+<h1>A notebook made for math.</h1>
+<p>25 pages. Four graphs on every page.</p>
+<div class="hero-actions"><a class="btn" href="shop.html">Shop</a><a class="btn ghost" href="pages.html">Inside</a></div>
 </div>
+<div class="hero-photo"><img src="images/cover-front.jpg" alt="Front cover of the Zanoty notebook"></div>
 </div>
-<div style="flex: 1 1 400px; min-width: 0; display: flex; justify-content: center">
-<div style="position: relative; width: 100%; max-width: 460px; height: 520px">
-<div class="plot" style="position: absolute; right: 0; top: 34px; width: 70%; height: 450px; border-radius: 2px 10px 10px 2px; box-shadow: 0 24px 48px rgba(10,46,53,0.18); transform: rotate(4deg)"></div>
-<div style="position: absolute; left: 0; top: 0; width: 78%; height: 490px; background: #FFFFFF; border-radius: 3px 12px 12px 3px; box-shadow: 0 30px 60px rgba(10,46,53,0.24); border-left: 16px solid #0B5560; transform: rotate(-3deg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
-<img src="zanoty-logo.jpg" alt="Zanoty notebook cover" style="width: 88%; height: auto">
-</div>
-</div>
-</div>
-</div>
-<div style="border-top: 1px solid #D5E9EC; background: #FFFFFF">
-<div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))">
-<div style="padding: 26px 24px; border-right: 1px solid #D5E9EC"><div style="font-family: 'Archivo', sans-serif; font-stretch: 115%; font-weight: 900; font-size: 34px">25</div><div style="color: #3D5F65; font-size: 15px">pages per notebook</div></div>
-<div style="padding: 26px 24px; border-right: 1px solid #D5E9EC"><div style="font-family: 'Archivo', sans-serif; font-stretch: 115%; font-weight: 900; font-size: 34px">Grid</div><div style="color: #3D5F65; font-size: 15px">printed on every page</div></div>
-<div style="padding: 26px 24px; border-right: 1px solid #D5E9EC"><div style="font-family: 'Archivo', sans-serif; font-stretch: 115%; font-weight: 900; font-size: 34px">Quality</div><div style="color: #3D5F65; font-size: 15px">high quality paper</div></div>
-<div style="padding: 26px 24px"><div style="font-family: 'Archivo', sans-serif; font-stretch: 115%; font-weight: 900; font-size: 34px">$6.50</div><div style="color: #3D5F65; font-size: 15px">per notebook</div></div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="section-head"><h2>Shop</h2><a class="link" href="shop.html">Details</a></div>
+<div class="tiles">
+<a class="tile" href="shop.html?pack=one"><div class="tile-img"><img src="images/pack-1.jpg" alt="One Zanoty notebook"></div><div class="tile-meta"><h3>Single notebook</h3><span>$6.50</span></div></a>
+<a class="tile" href="shop.html?pack=three"><div class="tile-img"><img src="images/pack-3.jpg" alt="Three Zanoty notebooks"></div><div class="tile-meta"><h3>Three pack</h3><span>$19.50</span></div></a>
+<a class="tile" href="shop.html?pack=class"><div class="tile-img"><img src="images/pack-30.jpg" alt="A stack of Zanoty notebooks"></div><div class="tile-meta"><h3>Class set of 30</h3><span>$195.00</span></div></a>
 </div>
 </div>
 </section>
 
-<section id="why" style="max-width: 1240px; margin: 0 auto; padding: 112px 24px">
-<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between; margin-bottom: 56px">
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 110%; font-weight: 900; font-size: clamp(36px, 4.4vw, 60px); line-height: 1; letter-spacing: -1px; text-transform: uppercase; max-width: 680px">Why Zanoty</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #2C4F55; max-width: 420px">The grid is already printed.</p>
+<section class="feature">
+<div class="feature-img"><img src="images/inside-mockup.jpg" alt="An inside page with a dot grid on the left and four graphs on the right"></div>
+<div class="feature-copy">
+<h2>Inside</h2>
+<p>Dot grid for notes. Four graphs, -10 to 10.</p>
+<ul class="spec-list">
+<li><b>Pages</b><span>25</span></li>
+<li><b>Layout</b><span>Dot grid and four graphs</span></li>
+<li><b>Graphs</b><span>Square, -10 to 10</span></li>
+<li><b>Paper</b><span>100 gsm, smooth white</span></li>
+<li><b>Size</b><span>8.5 × 11 in</span></li>
+</ul>
+<a class="link" href="pages.html" style="color:#FFFFFF">See the pages</a>
 </div>
-<div style="border: 1.5px solid #0A2E35; border-radius: 6px; overflow: hidden; background: #FFFFFF">
-<div style="display: grid; grid-template-columns: minmax(140px, 1fr) minmax(0, 1.4fr) minmax(0, 1.4fr); background: #0A2E35; color: #FFFFFF; font-weight: 700; font-size: 15px">
-<div style="padding: 18px 22px"></div>
-<div style="padding: 18px 22px; color: #9FB8BC">Other paper</div>
-<div style="padding: 18px 22px; color: #7FE3F2">Zanoty</div>
-</div>
-<div class="row" style="display: grid; grid-template-columns: minmax(140px, 1fr) minmax(0, 1.4fr) minmax(0, 1.4fr); border-top: 1px solid #D5E9EC; font-size: 16px; line-height: 1.5">
-<div style="padding: 20px 22px; font-weight: 700">Setup</div>
-<div style="padding: 20px 22px; color: #3D5F65">Draw your own grid</div>
-<div style="padding: 20px 22px">Already printed</div>
-</div>
-<div class="row" style="display: grid; grid-template-columns: minmax(140px, 1fr) minmax(0, 1.4fr) minmax(0, 1.4fr); border-top: 1px solid #D5E9EC; font-size: 16px; line-height: 1.5">
-<div style="padding: 20px 22px; font-weight: 700">Keeping work together</div>
-<div style="padding: 20px 22px; color: #3D5F65">Loose sheets</div>
-<div style="padding: 20px 22px">25 bound pages</div>
-</div>
-<div class="row" style="display: grid; grid-template-columns: minmax(140px, 1fr) minmax(0, 1.4fr) minmax(0, 1.4fr); border-top: 1px solid #D5E9EC; font-size: 16px; line-height: 1.5">
-<div style="padding: 20px 22px; font-weight: 700">Paper</div>
-<div style="padding: 20px 22px; color: #3D5F65">Thin</div>
-<div style="padding: 20px 22px">High quality</div>
-</div>
-<div class="row" style="display: grid; grid-template-columns: minmax(140px, 1fr) minmax(0, 1.4fr) minmax(0, 1.4fr); border-top: 1px solid #D5E9EC; font-size: 16px; line-height: 1.5">
-<div style="padding: 20px 22px; font-weight: 700">Accuracy</div>
-<div style="padding: 20px 22px; color: #3D5F65">Uneven</div>
-<div style="padding: 20px 22px">Even</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="trio">
+<div><h3>Graphs printed</h3><p class="muted">Axes and numbers included.</p></div>
+<div><h3>Dot grid</h3><p class="muted">Room for your work.</p></div>
+<div><h3>100 gsm paper</h3><p class="muted">Smooth and erasable.</p></div>
 </div>
 </div>
 </section>
 
-<section id="try" class="griddark" style="background-color: #0A2E35; color: #FFFFFF">
-<div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
-<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 110%; font-weight: 900; font-size: clamp(36px, 4.4vw, 58px); line-height: 1; letter-spacing: -1px; text-transform: uppercase">Try the grid</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #C6E4E8">Click to plot points.</p>
-<div style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 15px; color: #7FE3F2; min-height: 48px; line-height: 1.7"><span id="coordText">No points plotted yet.</span></div>
-<button type="button" data-action="clearPlot" style="align-self: flex-start; height: 48px; padding: 0 22px; border: 1.5px solid #7FE3F2; border-radius: 4px; background: transparent; color: #7FE3F2; font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 15px; cursor: pointer">Clear</button>
-</div>
-<div style="flex: 1.4 1 560px; min-width: 0; overflow-x: auto">
-<div class="plot" id="plotArea" data-action="plot" style="position: relative; min-width: 520px; aspect-ratio: 5 / 3; border-radius: 4px; cursor: crosshair; box-shadow: 0 30px 60px rgba(0,0,0,0.35)">
-<svg viewBox="0 0 20 12" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none">
-<line x1="10" y1="0" x2="10" y2="12" stroke="#0A2E35" stroke-width="2" vector-effect="non-scaling-stroke"></line>
-<line x1="0" y1="6" x2="20" y2="6" stroke="#0A2E35" stroke-width="2" vector-effect="non-scaling-stroke"></line>
-<polyline id="poly" points="" fill="none" stroke="#1D9BB8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"></polyline>
-</svg>
-
-</div>
-</div>
+<section class="banner">
+<div class="wrap">
+<div><h2>Class sets</h2><p class="muted" style="margin-top:12px">30 notebooks for $195.</p></div>
+<a class="btn" href="shop.html?pack=class">Shop class sets</a>
 </div>
 </section>
-
-<section style="max-width: 1240px; margin: 0 auto; padding: 112px 24px">
-<h2 style="margin: 0 0 48px; font-family: 'Archivo', sans-serif; font-stretch: 110%; font-weight: 900; font-size: clamp(36px, 4.4vw, 60px); line-height: 1; letter-spacing: -1px; text-transform: uppercase">Who it's for</h2>
-<div style="border-top: 1.5px solid #0A2E35">
-<div class="row" style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 30px 8px; border-bottom: 1px solid #C9DFE2; align-items: baseline">
-<div style="flex: 0 0 300px; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 800; font-size: 28px">Students</div>
-<p style="flex: 1 1 380px; margin: 0; font-size: 18px; line-height: 1.6; color: #2C4F55">Math, physics, chemistry.</p>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div class="signup">
+<a class="footer-logo" href="index.html"><img src="images/logo-word.png" alt="Zanoty"></a>
+<p>Graph notebooks.</p>
+<p>Questions? <a href="mailto:hello@zanoty.com" style="color:#FFFFFF;text-decoration:underline">hello@zanoty.com</a></p>
 </div>
-<div class="row" style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 30px 8px; border-bottom: 1px solid #C9DFE2; align-items: baseline">
-<div style="flex: 0 0 300px; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 800; font-size: 28px">Teachers and tutors</div>
-<p style="flex: 1 1 380px; margin: 0; font-size: 18px; line-height: 1.6; color: #2C4F55">Class sets of 30.</p>
+<div>
+<h3>Shop</h3>
+<ul>
+<li><a href="shop.html?pack=one">Single notebook</a></li>
+<li><a href="shop.html?pack=three">Three pack</a></li>
+<li><a href="shop.html?pack=class">Class set of 30</a></li>
+</ul>
 </div>
-<div class="row" style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 30px 8px; border-bottom: 1px solid #C9DFE2; align-items: baseline">
-<div style="flex: 0 0 300px; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 800; font-size: 28px">Makers and designers</div>
-<p style="flex: 1 1 380px; margin: 0; font-size: 18px; line-height: 1.6; color: #2C4F55">Floor plans and scale drawings.</p>
+<div>
+<h3>Product</h3>
+<ul>
+<li><a href="pages.html">The pages</a></li>
+<li><a href="pages.html#try">Try a page</a></li>
+</ul>
 </div>
-<div class="row" style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 30px 8px; border-bottom: 1px solid #C9DFE2; align-items: baseline">
-<div style="flex: 0 0 300px; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 800; font-size: 28px">Trackers and planners</div>
-<p style="flex: 1 1 380px; margin: 0; font-size: 18px; line-height: 1.6; color: #2C4F55">Habits, workouts, savings.</p>
-</div>
-</div>
-</section>
-
-<section id="specs" class="grid" style="border-top: 1px solid #D5E9EC; border-bottom: 1px solid #D5E9EC">
-<div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; gap: 56px">
-<div style="flex: 1 1 320px; min-width: 0">
-<h2 style="margin: 0 0 18px; font-family: 'Archivo', sans-serif; font-stretch: 110%; font-weight: 900; font-size: clamp(36px, 4.4vw, 58px); line-height: 1; letter-spacing: -1px; text-transform: uppercase">The specs</h2>
-
-</div>
-<dl style="flex: 1.6 1 520px; min-width: 0; margin: 0; background: #FFFFFF; border: 1.5px solid #0A2E35; border-radius: 6px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 20px 24px; border-bottom: 1px solid #D5E9EC"><dt style="font-weight: 700">Pages</dt><dd style="margin: 0; font-family: 'JetBrains Mono', monospace">25</dd></div>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 20px 24px; border-bottom: 1px solid #D5E9EC"><dt style="font-weight: 700">Ruling</dt><dd style="margin: 0; font-family: 'JetBrains Mono', monospace">Graph grid, pre-printed on every page</dd></div>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 20px 24px; border-bottom: 1px solid #D5E9EC"><dt style="font-weight: 700">Paper</dt><dd style="margin: 0; font-family: 'JetBrains Mono', monospace">High quality stock</dd></div>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 20px 24px; border-bottom: 1px solid #D5E9EC"><dt style="font-weight: 700">Size</dt><dd style="margin: 0; font-family: 'JetBrains Mono', monospace">[SIZE]</dd></div>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 20px 24px; border-bottom: 1px solid #D5E9EC"><dt style="font-weight: 700">Binding</dt><dd style="margin: 0; font-family: 'JetBrains Mono', monospace">[BINDING]</dd></div>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 20px 24px"><dt style="font-weight: 700">Price</dt><dd style="margin: 0; font-family: 'JetBrains Mono', monospace">$6.50 per notebook</dd></div>
-</dl>
-</div>
-</section>
-
-<section id="shop" style="max-width: 1240px; margin: 0 auto; padding: 112px 24px">
-<div style="display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
-<div style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; border: 1px solid #D5E9EC; border-radius: 8px; padding: 32px; display: flex; justify-content: center">
-<img src="zanoty-logo.jpg" alt="Zanoty graph notebook" style="width: 100%; max-width: 440px; height: auto">
-</div>
-<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 110%; font-weight: 900; font-size: clamp(34px, 3.8vw, 50px); line-height: 1; letter-spacing: -1px; text-transform: uppercase">Zanoty Graph Notebook</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #2C4F55">Single, three pack or class set of 30.</p>
-<fieldset style="margin: 0; padding: 0; border: none; display: flex; flex-direction: column; gap: 12px">
-<legend style="font-weight: 700; margin-bottom: 12px">Choose a pack</legend>
-<div id="packs" style="display: flex; flex-direction: column; gap: 12px"></div>
-</fieldset>
-<button type="button" data-action="addSelected" style="height: 60px; border: none; border-radius: 4px; background: #0B5560; color: #FFFFFF; font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 18px; cursor: pointer">Add to cart · <span id="selectedPrice">$6.50</span></button>
-<p style="margin: 0; font-size: 14px; color: #3D5F65">Shipping and taxes calculated at checkout.</p>
+<div>
+<h3>Help</h3>
+<ul>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="faq.html#shipping">Shipping and returns</a></li>
+<li><a href="mailto:hello@zanoty.com">Contact</a></li>
+</ul>
 </div>
 </div>
-</section>
-
-<section id="faq" style="border-top: 1px solid #D5E9EC; background: #FFFFFF">
-<div style="max-width: 920px; margin: 0 auto; padding: 104px 24px">
-<h2 style="margin: 0 0 40px; font-family: 'Archivo', sans-serif; font-stretch: 110%; font-weight: 900; font-size: clamp(36px, 4.4vw, 58px); line-height: 1; letter-spacing: -1px; text-transform: uppercase">Questions</h2>
-<div style="border-top: 1.5px solid #0A2E35">
-<div id="faqs"></div>
-</div>
-</div>
-</section>
-
-<footer class="griddark" style="background-color: #0A2E35; color: #C6E4E8">
-<div style="max-width: 1240px; margin: 0 auto; padding: 80px 24px 40px; display: flex; flex-direction: column; gap: 56px">
-<div style="display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between">
-<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 118%; font-weight: 900; font-size: 30px; color: #FFFFFF; letter-spacing: 1px">ZANOTY</span>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; max-width: 360px">Restock updates.</p>
-<div id="signupForm" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end">
-<div style="display: flex; flex-direction: column; gap: 6px; flex: 1 1 220px">
-<label for="zanoty-email" style="font-size: 14px; font-weight: 600; color: #FFFFFF">Email address</label>
-<input id="zanoty-email" type="email" placeholder="you@example.com" style="height: 48px; padding: 0 14px; border: 1.5px solid #7FE3F2; border-radius: 4px; background: #0F3C44; color: #FFFFFF; font-family: 'Figtree', sans-serif; font-size: 16px">
-</div>
-<button type="button" data-action="subscribe" style="height: 48px; padding: 0 22px; border: none; border-radius: 4px; background: #7FE3F2; color: #0A2E35; font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 16px; cursor: pointer">Sign up</button>
-</div>
-
-<p id="thanks" hidden role="status" style="margin: 0; font-weight: 700; color: #7FE3F2">Thanks for signing up.</p>
-
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 64px">
-<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px">
-<span style="font-weight: 700; color: #FFFFFF">Shop</span>
-<a href="#shop" style="color: #C6E4E8">Graph notebook</a>
-<a href="#shop" style="color: #C6E4E8">Class sets</a>
-<a href="#specs" style="color: #C6E4E8">Specs</a>
-</div>
-<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px">
-<span style="font-weight: 700; color: #FFFFFF">Help</span>
-<a href="#faq" style="color: #C6E4E8">FAQ</a>
-<a href="#faq" style="color: #C6E4E8">Shipping</a>
-<span>[YOUR EMAIL]</span>
-</div>
-</div>
-</div>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 24px; border-top: 1px solid rgba(198,228,232,0.25); font-size: 14px">
-<span>© 2026 Zanoty. All rights reserved.</span>
-<span style="font-family: 'JetBrains Mono', monospace">Graph notebooks</span>
-</div>
+<div class="footer-base"><span>&copy; 2026 Zanoty. All rights reserved.</span></div>
 </div>
 </footer>
-
-<div id="cartDrawer" hidden style="position: fixed; inset: 0; z-index: 50; display: flex; justify-content: flex-end">
-<button type="button" aria-label="Close cart" data-action="closeCart" style="position: absolute; inset: 0; border: none; background: rgba(10,46,53,0.45); cursor: pointer"></button>
-<aside aria-label="Cart" style="position: relative; width: 100%; max-width: 420px; height: 100%; background: #FFFFFF; box-shadow: -20px 0 50px rgba(10,46,53,0.25); display: flex; flex-direction: column">
-<div style="display: flex; justify-content: space-between; align-items: center; padding: 22px 24px; border-bottom: 1px solid #D5E9EC">
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 900; font-size: 22px; text-transform: uppercase">Your cart</span>
-<button type="button" data-action="closeCart" aria-label="Close cart" style="width: 44px; height: 44px; border: 1.5px solid #0A2E35; border-radius: 4px; background: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0A2E35" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
-</div>
-<div style="flex: 1; overflow-y: auto; padding: 8px 24px">
-<p id="cartEmpty" style="margin: 32px 0; font-size: 17px; color: #3D5F65">Your cart is empty.</p>
-
-<div id="cartLines"></div>
-</div>
-<div style="padding: 22px 24px; border-top: 1px solid #D5E9EC; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; justify-content: space-between; font-size: 18px"><span style="font-weight: 700">Subtotal</span><span style="font-family: 'JetBrains Mono', monospace; font-weight: 600"><span id="subtotal">$0.00</span></span></div>
-<button type="button" style="height: 56px; border: none; border-radius: 4px; background: #0B5560; color: #FFFFFF; font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 17px; cursor: pointer">Checkout</button>
-</div>
-</aside>
-</div>
-
-
-</div>
-
-<script>
-(function(){
-  var PRICE=6.5;
-  function money(v){return '$'+v.toFixed(2);}
-  function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML;}
-  var packs=[
-    {id:'one',name:'Single notebook',units:1,detail:'1 notebook'},
-    {id:'three',name:'Three pack',units:3,detail:'3 notebooks'},
-    {id:'cls',name:'Class set',units:30,detail:'30 notebooks'}
-  ];
-  var faqs=[
-    {q:'What is printed on the pages?',a:'A graph grid, on all 25 pages.'},
-    {q:'What kind of paper is it?',a:'Zanoty notebooks use high quality paper. [PAPER DETAILS]'},
-    {q:'Can I order for a whole class?',a:'Yes. 30 notebooks at $6.50 each. Larger orders: [YOUR EMAIL].'},
-    {q:'Where do you ship and how long does it take?',a:'[SHIPPING REGIONS AND DELIVERY TIMES]'},
-    {q:'What if something arrives damaged?',a:'[RETURN AND REPLACEMENT POLICY]'}
-  ];
-  var state={points:[],pack:'one',cart:{one:0,three:0,cls:0},faq:0};
-  var $=function(id){return document.getElementById(id);};
-
-  function renderPacks(){
-    $('packs').innerHTML=packs.map(function(p){
-      var on=state.pack===p.id;
-      return '<button type="button" data-pack="'+p.id+'" aria-pressed="'+on+'" style="display:flex;justify-content:space-between;align-items:center;gap:16px;width:100%;min-height:64px;padding:14px 20px;border:2px solid '+(on?'#0B5560':'#C9DFE2')+';border-radius:6px;background:'+(on?'#E8F8FA':'#FFFFFF')+';color:#0A2E35;font-family:Figtree,sans-serif;font-size:16px;text-align:left;cursor:pointer">'
-        +'<span><strong style="display:block;font-size:17px">'+p.name+'</strong><span style="color:#3D5F65">'+p.detail+'</span></span>'
-        +'<span style="font-family:\'JetBrains Mono\',monospace;font-weight:600;font-size:18px">'+money(p.units*PRICE)+'</span></button>';
-    }).join('');
-    var sel=packs.filter(function(p){return p.id===state.pack;})[0];
-    $('selectedPrice').textContent=money(sel.units*PRICE);
-  }
-  function renderFaqs(){
-    $('faqs').innerHTML=faqs.map(function(f,i){
-      var open=state.faq===i;
-      return '<div style="border-bottom:1px solid #C9DFE2">'
-        +'<button type="button" data-faq="'+i+'" aria-expanded="'+open+'" style="width:100%;min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 4px;border:none;background:transparent;color:#0A2E35;font-family:Figtree,sans-serif;font-weight:700;font-size:19px;text-align:left;cursor:pointer">'
-        +'<span>'+f.q+'</span><span aria-hidden="true" style="font-family:\'JetBrains Mono\',monospace;font-size:24px;color:#0B5560">'+(open?'-':'+')+'</span></button>'
-        +(open?'<p style="margin:0;padding:0 4px 24px;font-size:17px;line-height:1.7;color:#2C4F55;max-width:720px">'+f.a+'</p>':'')
-        +'</div>';
-    }).join('');
-  }
-  function renderCart(){
-    var count=0,lines=[];
-    packs.forEach(function(p){
-      var n=state.cart[p.id];
-      if(n>0){
-        var nb=n*p.units;count+=nb;
-        lines.push('<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid #E3F0F2"><div style="display:flex;flex-direction:column;gap:4px"><strong>'+p.name+' × '+n+'</strong><span style="font-size:14px;color:#3D5F65">'+nb+' notebook'+(nb===1?'':'s')+'</span><button type="button" data-remove="'+p.id+'" style="align-self:flex-start;padding:6px 0;border:none;background:none;color:#0B5560;font-family:Figtree,sans-serif;font-size:14px;font-weight:600;text-decoration:underline;cursor:pointer">Remove one</button></div><span style="font-family:\'JetBrains Mono\',monospace;font-weight:600">'+money(nb*PRICE)+'</span></div>');
-      }
-    });
-    $('cartLines').innerHTML=lines.join('');
-    $('cartEmpty').hidden=lines.length>0;
-    $('cartCount').textContent=count;
-    $('subtotal').textContent=money(count*PRICE);
-  }
-  function renderPlot(){
-    var area=$('plotArea');
-    area.querySelectorAll('.dot').forEach(function(d){d.remove();});
-    state.points.forEach(function(p){
-      var d=document.createElement('div');d.className='dot';
-      d.style.cssText='position:absolute;left:'+(p.x/20*100)+'%;top:'+(p.y/12*100)+'%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:#0A2E35;border:3px solid #FFFFFF;box-sizing:border-box;pointer-events:none';
-      area.appendChild(d);
-    });
-    $('poly').setAttribute('points',state.points.map(function(p){return p.x+','+p.y;}).join(' '));
-    $('coordText').textContent=state.points.length?state.points.map(function(p){return '('+(p.x-10)+', '+(6-p.y)+')';}).join('  '):'No points plotted yet.';
-  }
-  function addPack(id){state.cart[id]++;renderCart();openCart();}
-  function openCart(){$('cartDrawer').hidden=false;document.body.style.overflow='hidden';}
-  function closeCart(){$('cartDrawer').hidden=true;document.body.style.overflow='';}
-
-  var actions={
-    openCart:openCart,closeCart:closeCart,
-    addSingle:function(){addPack('one');},
-    addSelected:function(){addPack(state.pack);},
-    clearPlot:function(){state.points=[];renderPlot();},
-    plot:function(e,el){
-      var r=el.getBoundingClientRect();
-      var x=Math.max(0,Math.min(20,Math.round((e.clientX-r.left)/r.width*20)));
-      var y=Math.max(0,Math.min(12,Math.round((e.clientY-r.top)/r.height*12)));
-      state.points=state.points.concat([{x:x,y:y}]).slice(-12);renderPlot();
-    },
-    subscribe:function(){
-      var v=$('zanoty-email').value;
-      if(v.indexOf('@')>0){$('signupForm').hidden=true;$('thanks').hidden=false;}
-    }
-  };
-  document.addEventListener('click',function(e){
-    var t=e.target.closest('[data-pack],[data-faq],[data-remove],[data-action]');
-    if(!t)return;
-    if(t.dataset.pack){state.pack=t.dataset.pack;renderPacks();return;}
-    if(t.dataset.faq!==undefined){var i=+t.dataset.faq;state.faq=state.faq===i?-1:i;renderFaqs();return;}
-    if(t.dataset.remove){var id=t.dataset.remove;state.cart[id]=Math.max(0,state.cart[id]-1);renderCart();return;}
-    var fn=actions[t.dataset.action];if(fn)fn(e,t);
-  });
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!$('cartDrawer').hidden)closeCart();});
-  renderPacks();renderFaqs();renderCart();renderPlot();
-})();
-</script>
+<script src="main.js"></script>
 </body>
 </html>

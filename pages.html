@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The pages | Zanoty</title>
+<meta name="description" content="What is on every page of the Zanoty Graph Notebook.">
+<link rel="icon" href="images/favicon.png">
+<link rel="preload" href="fonts/fredoka-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">New: the Zanoty graph notebook. <a href="shop.html">Shop</a></div>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html" aria-label="Zanoty home"><img src="images/logo-word.png" alt="Zanoty"></a>
+<nav class="nav" aria-label="Main">
+<a href="shop.html">Shop</a>
+<a href="pages.html" aria-current="page">The pages</a>
+<a href="faq.html">FAQ</a>
+</nav>
+<div class="header-end"><a href="shop.html">Buy $6.50</a></div>
+</div>
+</header>
+<main>
+
+<section class="page-hero">
+<div class="wrap">
+<h1>Inside</h1>
+<p class="muted">Every page has the same layout.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap anatomy">
+<img src="images/inside-mockup.jpg" alt="An inside page of the Zanoty notebook">
+<div>
+<h2 style="margin-bottom:28px">Each page</h2>
+<ul class="parts">
+<li><b>Title line</b><span class="muted">Label each page by topic.</span></li>
+<li><b>Dot grid</b><span class="muted">For notes and working.</span></li>
+<li><b>Four graphs</b><span class="muted">Square, -10 to 10.</span></li>
+<li><b>Paper</b><span class="muted">100 gsm, smooth white.</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section" id="try" style="background:var(--mist)">
+<div class="wrap try">
+<div style="display:flex;flex-direction:column;gap:20px">
+<h2>Try it</h2>
+<p class="muted" style="font-size:18px">Click to plot a point.</p>
+<p class="coords" id="coords" aria-live="polite"></p>
+<div><button class="btn ghost" type="button" id="clearPlot">Clear</button></div>
+</div>
+<div class="plot" id="plot" role="img" aria-label="Square graph from -10 to 10. Click to plot points."><svg viewBox="0 0 20 20" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="section-head"><h2>Get yours</h2><a class="link" href="shop.html">Details</a></div>
+<div class="tiles">
+<a class="tile" href="shop.html?pack=one"><div class="tile-img"><img src="images/pack-1.jpg" alt="One Zanoty notebook"></div><div class="tile-meta"><h3>Single notebook</h3><span>$6.50</span></div></a>
+<a class="tile" href="shop.html?pack=three"><div class="tile-img"><img src="images/pack-3.jpg" alt="Three Zanoty notebooks"></div><div class="tile-meta"><h3>Three pack</h3><span>$19.50</span></div></a>
+<a class="tile" href="shop.html?pack=class"><div class="tile-img"><img src="images/pack-30.jpg" alt="A stack of Zanoty notebooks"></div><div class="tile-meta"><h3>Class set of 30</h3><span>$195.00</span></div></a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div class="signup">
+<a class="footer-logo" href="index.html"><img src="images/logo-word.png" alt="Zanoty"></a>
+<p>Graph notebooks.</p>
+<p>Questions? <a href="mailto:hello@zanoty.com" style="color:#FFFFFF;text-decoration:underline">hello@zanoty.com</a></p>
+</div>
+<div>
+<h3>Shop</h3>
+<ul>
+<li><a href="shop.html?pack=one">Single notebook</a></li>
+<li><a href="shop.html?pack=three">Three pack</a></li>
+<li><a href="shop.html?pack=class">Class set of 30</a></li>
+</ul>
+</div>
+<div>
+<h3>Product</h3>
+<ul>
+<li><a href="pages.html">The pages</a></li>
+<li><a href="pages.html#try">Try a page</a></li>
+</ul>
+</div>
+<div>
+<h3>Help</h3>
+<ul>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="faq.html#shipping">Shipping and returns</a></li>
+<li><a href="mailto:hello@zanoty.com">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-base"><span>&copy; 2026 Zanoty. All rights reserved.</span></div>
+</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

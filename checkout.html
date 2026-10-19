@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout | Zanoty</title>
+<meta name="description" content="Place your Zanoty order.">
+<link rel="icon" href="images/favicon.png">
+<link rel="preload" href="fonts/fredoka-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">New: the Zanoty graph notebook. <a href="shop.html">Shop</a></div>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html" aria-label="Zanoty home"><img src="images/logo-word.png" alt="Zanoty"></a>
+<nav class="nav" aria-label="Main">
+<a href="shop.html" aria-current="page">Shop</a>
+<a href="pages.html">The pages</a>
+<a href="faq.html">FAQ</a>
+</nav>
+<div class="header-end"><a href="shop.html">Buy $6.50</a></div>
+</div>
+</header>
+<main>
+
+<div class="wrap">
+<p class="crumbs"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / Checkout</p>
+<div id="checkoutArea" class="checkout">
+<form id="orderForm" class="co-form" novalidate>
+<h1>Checkout</h1>
+
+<section class="co-step">
+<h2>Contact</h2>
+<div class="field"><label for="co-name">Full name</label><input id="co-name" name="name" autocomplete="name" required></div>
+<div class="row2">
+<div class="field"><label for="co-email">Email</label><input id="co-email" name="email" type="email" autocomplete="email" required></div>
+<div class="field"><label for="co-phone">Phone</label><input id="co-phone" name="phone" type="tel" autocomplete="tel" required></div>
+</div>
+</section>
+
+<section class="co-step">
+<h2>Shipping</h2>
+<div class="field"><label for="co-addr">Street address</label><input id="co-addr" name="address" autocomplete="street-address" required></div>
+<div class="row3">
+<div class="field"><label for="co-city">City</label><input id="co-city" name="city" autocomplete="address-level2" required></div>
+<div class="field"><label for="co-prov">Province or state</label><input id="co-prov" name="province" autocomplete="address-level1" required></div>
+<div class="field"><label for="co-postal">Postal code</label><input id="co-postal" name="postal" autocomplete="postal-code" required></div>
+</div>
+<div class="field"><label for="co-country">Country</label><select id="co-country" name="country" autocomplete="country-name"><option>Canada</option><option>United States</option></select></div>
+</section>
+
+<section class="co-step">
+<h2>Payment</h2>
+<fieldset class="options">
+<legend class="sr">Payment method</legend>
+<label class="opt"><span><input type="radio" name="payment" value="Pay on delivery" checked>Pay on delivery</span><small>Cash or debit</small></label>
+<label class="opt"><span><input type="radio" name="payment" value="Interac e-Transfer">Interac e-Transfer</span><small>Details by email</small></label>
+<label class="opt" id="cardOpt"><span><input type="radio" name="payment" value="Card" id="cardRadio">Credit or debit card</span><small id="cardNote">Coming soon</small></label>
+</fieldset>
+</section>
+
+<div class="field"><label for="co-notes">Notes (optional)</label><textarea id="co-notes" name="notes" rows="3"></textarea></div>
+<button class="btn full" type="submit" id="placeBtn">Place order</button>
+<p class="status" id="orderStatus" role="status"></p>
+</form>
+
+<aside class="summary" aria-label="Order summary">
+<h2>Order</h2>
+<div class="sum-item">
+<img src="images/pack-1.jpg" alt="" id="sumImg">
+<div><b id="sumName">Single notebook</b><span class="muted" id="sumEach">$6.50 each</span></div>
+</div>
+<fieldset class="options" style="gap:8px">
+<legend>Pack</legend>
+<label class="opt"><span><input type="radio" name="cpack" value="one" checked>Single notebook</span><small>$6.50</small></label>
+<label class="opt"><span><input type="radio" name="cpack" value="three">Three pack</span><small>$19.50</small></label>
+<label class="opt"><span><input type="radio" name="cpack" value="class">Class set of 30</span><small>$195.00</small></label>
+</fieldset>
+<div class="qty"><span>Quantity</span><div class="stepper"><button type="button" id="qtyMinus" aria-label="Decrease quantity">&minus;</button><output id="qty" aria-live="polite">1</output><button type="button" id="qtyPlus" aria-label="Increase quantity">+</button></div></div>
+<dl class="totals">
+<div><dt>Subtotal</dt><dd id="tSub">$6.50</dd></div>
+<div><dt>Shipping</dt><dd id="tShip">$4.99</dd></div>
+<div class="grand"><dt>Total</dt><dd id="tTotal">$11.49</dd></div>
+</dl>
+<p class="muted" style="font-size:14px">Free shipping over $35.</p>
+</aside>
+</div>
+
+<div id="confirm" class="confirm" hidden>
+<h1>Order placed.</h1>
+<p class="muted" id="confirmText"></p>
+<a class="btn" href="index.html">Back home</a>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div class="signup">
+<a class="footer-logo" href="index.html"><img src="images/logo-word.png" alt="Zanoty"></a>
+<p>Graph notebooks.</p>
+<p>Questions? <a href="mailto:hello@zanoty.com" style="color:#FFFFFF;text-decoration:underline">hello@zanoty.com</a></p>
+</div>
+<div>
+<h3>Shop</h3>
+<ul>
+<li><a href="shop.html?pack=one">Single notebook</a></li>
+<li><a href="shop.html?pack=three">Three pack</a></li>
+<li><a href="shop.html?pack=class">Class set of 30</a></li>
+</ul>
+</div>
+<div>
+<h3>Product</h3>
+<ul>
+<li><a href="pages.html">The pages</a></li>
+<li><a href="pages.html#try">Try a page</a></li>
+</ul>
+</div>
+<div>
+<h3>Help</h3>
+<ul>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="faq.html#shipping">Shipping and returns</a></li>
+<li><a href="mailto:hello@zanoty.com">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-base"><span>&copy; 2026 Zanoty. All rights reserved.</span></div>
+</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
